@@ -1,0 +1,12 @@
+<%= form_for @link do |f| %>
+<%= f.text_field :url, placeholder: "URL" %>
+<%= f.text_field :title, placeholder: "Title" %>
+<%= f.submit %></br>
+<% end %>
+
+
+<%= @links.each do |link| %>
+<%= link.title %></br>
+<%= link.url %></br>
+<% end %>
+</br>
