@@ -3,9 +3,9 @@
 <%= f.text_field :title, placeholder: "Title" %>
 <%= f.submit %></br>
 <% end %>
+</br>
 
-
-<%= @links.each do |link| %>
+<% @links.each do |link| %>
 <%= link.title %></br>
 <%= link.url %></br>
 <% end %>
