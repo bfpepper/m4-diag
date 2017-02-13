@@ -5,6 +5,7 @@ class LinksController < ApplicationController
   def index
     @link = @user.links.new
     @links = @user.links
+    binding.pry
   end
 
   def create

@@ -7,6 +7,7 @@
 
 <% @links.each do |link| %>
 <%= link.title %></br>
-<%= link.url %></br>
+<%= link.read %>
+<%= link.url %> <button class='mark-as-read' type="submit">Mark as read</button></br>
 <% end %>
 </br>
