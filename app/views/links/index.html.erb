@@ -6,8 +6,11 @@
 </br>
 
 <% @links.each do |link| %>
-<%= link.title %></br>
-<%= link.read %>
-<%= link.url %> <button class='mark-as-read' type="submit">Mark as Read</button></br>
+  <div class="link" data-link-id=<%= link.id %> >
+    <%= link.title %></br>
+    <span class="read-status"> <%= link.read %> </span>
+    <%= link.url %> <button class='mark-as-read' >Mark as Read</button></br>
+  </div>
+
 <% end %>
 </br>

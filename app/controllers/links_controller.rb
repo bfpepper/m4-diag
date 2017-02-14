@@ -3,8 +3,8 @@ class LinksController < ApplicationController
   before_action :set_user
 
   def index
+    @links = @user.links.all
     @link = @user.links.new
-    @links = @user.links
   end
 
   def create
