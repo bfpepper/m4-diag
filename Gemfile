@@ -17,12 +17,12 @@ gem 'sprockets-es6'
 gem 'bcrypt', '~> 3.1.7'
 gem "validate_url"
 gem 'rack-cors'
+gem 'faraday'
 # gem 'unicorn'
 
 # gem 'capistrano-rails', group: :development
 group :development do
   gem 'web-console', '~> 2.0'
-  gem 'rails_12factor'
 end
 
 group :development, :test do
